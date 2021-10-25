@@ -90,11 +90,13 @@ var music = [
 ];
 //radio
 number = Math.floor(Math.random() * music.length);
+  audio = new Audio(`${music[number]}`);
 console.log(music[number]);
-var audio = new Audio(`${music[number]}`);
+var audio;
 function play(){
+  
  audio.volume = range.value;
 audio.play();
  }
  
- 
+ var play1 = setInterval(play,audio.duration);
