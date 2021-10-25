@@ -1,16 +1,11 @@
-﻿<!--
-Website made by reqs inspired by https://reager.org/ 
-If any of the songs on the site belongs to you (as the copyright holder) 
-and you want it taken down - please shoot me an email.
--->
-
+﻿
 
 <html>
 <link rel="stylesheet" href="style.css">
 <head>
     <script src="script.js"></script>
 </head>
-</body>
+</body onload="play()">
 <div id="container">
     
       
@@ -41,7 +36,7 @@ and you want it taken down - please shoot me an email.
 <br><br>
 <input value="0.1" type="range" oninput="changeVolume()" id="range" min="0" max="1" step="0.01" />
 
-
+<button onclick="play()">Play Audio</button>
     </div>
  </div>    
  
