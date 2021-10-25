@@ -5,7 +5,7 @@
 <head>
     <script src="script.js"></script>
 </head>
-</body onload="play()">
+</body onload="currentSong()">
 <div id="container">
     
       
@@ -16,6 +16,7 @@
      <div class="menu-header">
         <i id="rgb"> REQS</i>
      </div>
+     
      <div id="about">
          <p>Projects</p>
      </div>
@@ -28,16 +29,15 @@
     <div id="about">
        <p> About</p>
     </div>
-    <div id="music">
-        <p>Music</p>
-            
-        
+    <div id="something"></div>
+    <div id="music">   
 <img id="speaker1" src="Obrazy/speaker.png" style="width:30px;" class="zoom" onclick="speaker()" onclick="changeImage()" ><img>
 <br><br>
-<input value="0.1" type="range" oninput="changeVolume()" id="range" min="0" max="1" step="0.01" />
-
-<button onclick="play()">Play Audio</button>
+<input value="0.1" type="range" oninput="changeVolume()" id="range" min="0" max="1" step="0.01" /><br>
+<a id="current-song-name">music</a><br>
+<button onclick="play();currentSong()">Play Audio</button>
     </div>
+    <div id="something"></div>
  </div>    
  
 </div>
