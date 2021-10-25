@@ -94,7 +94,7 @@ number = Math.floor(Math.random() * music.length);
 console.log(music[number]);
 var audio;
 function play(){
-  
+  number = Math.floor(Math.random() * music.length);
  audio.volume = range.value;
 audio.play();
  }
