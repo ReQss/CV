@@ -28,7 +28,7 @@ float:left;
     height: 100%;
     top: 0;
     left: 0;
-   background-image:url("Obrazy/noise.png");
+   background-image:url("Obrazy/sl.png");
 	box-shadow:0 0 300px 50px rgba(0,0,30,100) inset;
 }
 .menu-header{
@@ -99,4 +99,31 @@ background: rgba( 0, 0, 0, 0.35 );
 float:left;
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
+#footer{
+	padding-top:10px;
+	font-size:15px;
+}
+#display{
+	margin:2%;
+	height:90%;
+	width:75.5%;
+	float:left;
+	z-index:10;
+	box-shadow: 0 8px 32px 0 rgba( 71, 58, 155, 2.37 );
+backdrop-filter: blur( 2.5px );
+float:left;
+	border-radius:20px;
+	
+}
+
   
+@-webkit-keyframes glow1 {
+	from {
+		filter:invert(0);
+	  
+	}
+	to {
+	  filter:invert(1);
+	}
+  }
+  .

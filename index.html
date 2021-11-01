@@ -9,16 +9,16 @@
 <div id="container">
     
       
-<div id="videobackground"> <video style="z-index:-1;"width="100%" autoplay muted loop id="myVideo">
+<div id="videobackground"> <video width="100%" autoplay muted loop id="myVideo">
     <source src="video.mp4" type="video/mp4">
 </video>  </div>
  <div id="menu">
      <div class="menu-header">
-        <i id="rgb"> REQS</i>
+       <img id="reqs"style="width:250px;" src="Obrazy/reqs.png">
      </div>
      
      <div id="about">
-         <p>Projects</p>
+         <p onclick="display()">Projects</p>
      </div>
      <div id="about">
         <p>Steam</p>
@@ -34,12 +34,28 @@
 <img id="speaker1" src="Obrazy/speaker.png" style="width:30px;" class="zoom" onclick="speaker()" onclick="changeImage()" ><img>
 <br><br>
 <input value="0.1" type="range" oninput="changeVolume()" id="range" min="0" max="1" step="0.01" /><br>
+<br>
 <a id="current-song-name">music</a><br>
-<button onclick="play();currentSong()">Play Audio</button>
+
     </div>
     <div id="something"></div>
- </div>    
- 
+    <div id="footer">
+   
+        <a id="rgb" > © reqs (2021) </a>
+         <br>
+
+         Background video: STEPS by
+         <a  href="http://www.beeple-crap.com/vjclips.php">beeple</a>
+       
+ <br>Music played on the site is used under Fair Use (private/non-profit use, effort put into the entire site, music being just a part of it) etc.
+If you still want your work taken down, please use the email above.
+
+</div>
+ </div>  
+  
+ <div id="display">
+    <iframe style="border-radius:20px;border-color:black;" id="animo" src="https://www.youtube.com/embed/YEiVn63Ue34?list=RDa3ESTf5CyGo" width="100%" height="100%" style="border:none;" scrolling="no" allowfullscreen="" name="v2" allow="encrypted-media"></iframe>
+ </div>
 </div>
 </body>
 

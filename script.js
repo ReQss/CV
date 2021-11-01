@@ -27,14 +27,15 @@ if(audio.volume!=0)
 //title
 
 
-//RED - 256,0,0 GREEN 0,256,0 BLUE 0,0,256
+//RGB
 var r=255;
 var g=0;
 var b=0;
 var stage=0;
 function rgb(){
   var author = document.getElementById("rgb").style.color =`rgb(${r},${g},${b})`;
- 
+ // var display = document.getElementById("display").style.
+ var author1 = document.getElementById("reqs").style.filter =`sepia(${g/70})`;
 if(stage==0){
   r-=1; 
   g+=1;
@@ -72,6 +73,18 @@ document.getElementById("current-song-name").innerHTML = "Maze of Mayo";
           else if(number ==4){
             document.getElementById("current-song-name").innerHTML = "Outbreaker";
               }
+              else if(number ==5){
+                document.getElementById("current-song-name").innerHTML = "Kradness";
+                  }
+                  else if(number ==6){
+                    document.getElementById("current-song-name").innerHTML = "Catgroove";
+                      }
+                      else if(number ==7){
+                        document.getElementById("current-song-name").innerHTML = "Undertale";
+                          }
+                          else if(number ==8){
+                            document.getElementById("current-song-name").innerHTML = "Ken Ashcorp - Im Your Slave";
+                              }
 }
 var number;
 var music = [
@@ -83,20 +96,32 @@ var music = [
   'Muzyka/outbreaker.mp3',
   'Muzyka/kradness.mp3',
   'Muzyka/catgroove.mp3',
-  'Muzyka/undertale.mp3',
+  'Muzyka/Ken Ashcorp - Im Your Slave.mp3',
   'Muzyka/supermario.mp3',
   'Muzyka/kilimanjaro.mp3',
   'Muzyka/hinkik.mp3'
 ];
 //radio
+
 number = Math.floor(Math.random() * music.length);
-  audio = new Audio(`${music[number]}`);
+var audio = new Audio(`${music[number]}`);
 console.log(music[number]);
-var audio;
+
+
 function play(){
-  number = Math.floor(Math.random() * music.length);
  audio.volume = range.value;
 audio.play();
  }
- 
- var play1 = setInterval(play,audio.duration);
+ var i = 0;
+function display(){
+  if(i==1){
+    document.getElementById("display").style.display = "block";
+    i=0;
+    alert("x");
+  }
+  if(i==0){
+  document.getElementById("display").style.display = "none";
+  i++;
+  }
+  
+}
