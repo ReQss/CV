@@ -96,22 +96,23 @@ var music = [
   'Muzyka/outbreaker.mp3',
   'Muzyka/kradness.mp3',
   'Muzyka/catgroove.mp3',
-  'Muzyka/Ken Ashcorp - Im Your Slave.mp3',
+  'Muzyka/undertale.mp3',
   'Muzyka/supermario.mp3',
   'Muzyka/kilimanjaro.mp3',
   'Muzyka/hinkik.mp3'
 ];
 //radio
-
 number = Math.floor(Math.random() * music.length);
-var audio = new Audio(`${music[number]}`);
+  audio = new Audio(`${music[number]}`);
 console.log(music[number]);
-
-
+var audio;
 function play(){
+  number = Math.floor(Math.random() * music.length);
  audio.volume = range.value;
 audio.play();
  }
+ 
+ var play1 = setInterval(play,audio.duration);
  var i = 0;
 function display(){
   if(i==1){
@@ -125,3 +126,4 @@ function display(){
   }
   
 }
+
